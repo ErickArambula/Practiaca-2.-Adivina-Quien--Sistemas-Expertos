@@ -5,9 +5,8 @@ import java.awt.*; //Necesario para manejar color, font e imagen
 
 public class AdivinaQuien extends JFrame implements ActionListener{
 
-  public JLabel etiquetaIMG, etiqueta1, etiqueta2;
-  public JButton boton;
-
+  public JLabel etiquetaIMG, etiqueta1, etiqueta2, etiqueta3;
+  public JButton boton, botonSalir, botonSIn1, botonNOn1, botonSIn2D, botonNOn2D, botonSIn2I, botonNOn2I, botonSIn3D, botonNOn3D, botonSIn3I, botonNOn3I, botonSIn4I, botonNOn4I;
 
 //********************************CONSTRUCTOR*******************************
   public AdivinaQuien (){
@@ -37,13 +36,164 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	etiqueta2.setForeground(Color.WHITE);
 	add(etiqueta2);
 
+	Font fuente3 = new Font("Broadway", Font.BOLD, 14);
+	etiqueta3 = new JLabel("Presiona jugar cuando estes listo. ");
+	etiqueta3.setBounds(60, 110, 700, 30); // x, y, ancho, alto
+	etiqueta3.setFont(fuente3);
+	etiqueta3.setForeground(Color.WHITE);
+	add(etiqueta3);
+
 	boton = new JButton("JUGAR");
 	boton.setBounds(20, 160, 90, 25);
 	add(boton);
 	
+	botonSalir = new JButton("SALIR");
+	botonSalir.setBounds(850, 560, 90, 25);
+	add(botonSalir);
+
+
+	botonSIn1 = new JButton("Si");
+	botonSIn1.setBounds(20, 160, 90, 25);
+	add(botonSIn1);
+	botonSIn1.setVisible(false);
+
+	botonNOn1 = new JButton("No");
+	botonNOn1.setBounds(125, 160, 90, 25);
+	add(botonNOn1);
+  	botonNOn1.setVisible(false); 
+
+
+
+	botonSIn2D = new JButton("Si");
+	botonSIn2D.setBounds(20, 160, 90, 25);
+	add(botonSIn2D);
+	botonSIn2D.setVisible(false);
+
+	botonNOn2D = new JButton("No");
+	botonNOn2D.setBounds(125, 160, 90, 25);
+	add(botonNOn2D);
+  	botonNOn2D.setVisible(false);
+
+	botonSIn2I = new JButton("Si");
+	botonSIn2I.setBounds(20, 160, 90, 25);
+	add(botonSIn2I);
+	botonSIn2I.setVisible(false);
+
+	botonNOn2I = new JButton("No");
+	botonNOn2I.setBounds(125, 160, 90, 25);
+	add(botonNOn2I);
+  	botonNOn2I.setVisible(false);
+
+
+
+	botonSIn3D = new JButton("Si");
+	botonSIn3D.setBounds(20, 160, 90, 25);
+	add(botonSIn3D);
+	botonSIn3D.setVisible(false);
+
+	botonNOn3D = new JButton("No");
+	botonNOn3D.setBounds(125, 160, 90, 25);
+	add(botonNOn3D);
+  	botonNOn3D.setVisible(false);
+
+	botonSIn3I = new JButton("Si");
+	botonSIn3I.setBounds(20, 160, 90, 25);
+	add(botonSIn3I);
+	botonSIn3I.setVisible(false);
+
+	botonNOn3I = new JButton("No");
+	botonNOn3I.setBounds(125, 160, 90, 25);
+	add(botonNOn3I);
+  	botonNOn3I.setVisible(false);
+
+
+
+	botonSIn4I = new JButton("Si");
+	botonSIn4I.setBounds(20, 160, 90, 25);
+	add(botonSIn4I);
+	botonSIn4I.setVisible(false);
+
+	botonNOn4I = new JButton("No");
+	botonNOn4I.setBounds(125, 160, 90, 25);
+	add(botonNOn4I);
+  	botonNOn4I.setVisible(false);
+
+
+	boton.addActionListener(this);
+	botonSIn1.addActionListener(this);
+	botonNOn1.addActionListener(this);
+	botonSIn2D.addActionListener(this);
+	botonNOn2D.addActionListener(this);
+	botonSIn2I.addActionListener(this);
+	botonNOn2I.addActionListener(this);
+	botonSIn3D.addActionListener(this);
+	botonNOn3D.addActionListener(this);
+	botonSIn3I.addActionListener(this);
+	botonNOn3I.addActionListener(this);
+	botonSIn4I.addActionListener(this);
+	botonNOn4I.addActionListener(this);
+	botonSalir.addActionListener(this);
+
   }//Fin del constructor 
 //---------------------------------------------------------------------------
 
+//**************************METODO ACTION PERFORMED***************************
+
+  public void actionPerformed(ActionEvent accion){
+
+	if(accion.getSource() == botonSalir){
+	  System.exit(0);
+	}
+	
+	if(accion.getSource() == boton){
+	  boton.setVisible(false);
+	  botonSIn1.setVisible(true);
+	  botonNOn1.setVisible(true);
+	  etiqueta3.setText("Tu personaje es muejer ? ");
+	}
+
+	if(accion.getSource() == botonSIn1){
+	  botonSIn1.setVisible(false);
+	  botonNOn1.setVisible(false);
+	  botonSIn2D.setVisible(true);
+	  botonNOn2D.setVisible(true);
+	  etiqueta3.setText("Tu personaje es adulto ? ");	
+	}
+
+		if(accion.getSource() == botonSIn2D){
+	  	botonSIn2D.setVisible(false);
+	  	botonNOn2D.setVisible(false);
+	  	botonSIn3I.setVisible(true);
+	  	botonNOn3I.setVisible(true);
+	  	etiqueta3.setText("Tu personaje promueve no juntarse con la chusma ? ");
+		}
+
+		if(accion.getSource() == botonNOn2D){
+	  	botonSIn2D.setVisible(false);
+	  	botonNOn2D.setVisible(false);
+	  	botonSIn3D.setVisible(true);
+	  	botonNOn3D.setVisible(true);
+	  	etiqueta3.setText("Tu personaje usa lentes ? ");
+		}
+
+
+
+
+
+	if(accion.getSource() == botonNOn1){
+	  botonSIn1.setVisible(false);
+	  botonNOn1.setVisible(false);
+	  botonSIn2I.setVisible(true);
+	  botonNOn2I.setVisible(true);
+	  etiqueta3.setText("Tu personaje es adulto ? ");
+	}
+
+
+
+
+
+  }//Fin del metodo actionPerformed
+//----------------------------------------------------------------------------
 
 //****************************************MAIN********************************
   public static void main(String args[]){
