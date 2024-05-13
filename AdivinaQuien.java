@@ -224,6 +224,7 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	if(accion.getSource() == botonJDN){
 	  boton.setVisible(true);
 	  botonJDN.setVisible(false);
+	}
 	
 	if(accion.getSource() == boton){
 	  boton.setVisible(false);
