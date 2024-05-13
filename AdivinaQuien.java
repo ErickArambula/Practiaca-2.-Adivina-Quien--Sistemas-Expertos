@@ -6,7 +6,7 @@ import java.awt.*; //Necesario para manejar color, font e imagen
 public class AdivinaQuien extends JFrame implements ActionListener{
 
   public JLabel etiquetaIMG, etiqueta1, etiqueta2, etiqueta3;
-  public JButton boton, botonSalir, botonSIn1, botonNOn1, botonSIn2D, botonNOn2D, botonSIn2I, botonNOn2I, botonSIn3D, botonNOn3D, botonSIn3I, botonNOn3I, botonSIn4I, botonNOn4I;
+  public JButton boton, botonSalir, botonSIn1, botonNOn1, botonSIn2D, botonNOn2D, botonSIn2I, botonNOn2I, botonSIn3D1, botonNOn3D1, botonSIn3I1, botonNOn3I1,botonSIn3D2, botonNOn3D2, botonSIn3I2, botonNOn3I2, botonSIn4I1, botonNOn4I1, botonSIn4D1, botonNOn4D1, botonSIn4I2, botonNOn4I2, botonSIn4D2, botonNOn4D2, botonJDN;
 
 //********************************CONSTRUCTOR*******************************
   public AdivinaQuien (){
@@ -51,6 +51,13 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	botonSalir.setBounds(850, 560, 90, 25);
 	add(botonSalir);
 
+	botonJDN = new JButton("Jugar de nuevo");
+	botonJDN.setBounds(20, 160, 140, 25);
+	add(botonJDN);
+	botonJDN.setVisible(false);
+
+
+
 
 	botonSIn1 = new JButton("Si");
 	botonSIn1.setBounds(20, 160, 90, 25);
@@ -61,6 +68,7 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	botonNOn1.setBounds(125, 160, 90, 25);
 	add(botonNOn1);
   	botonNOn1.setVisible(false); 
+
 
 
 
@@ -86,52 +94,120 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 
 
 
-	botonSIn3D = new JButton("Si");
-	botonSIn3D.setBounds(20, 160, 90, 25);
-	add(botonSIn3D);
-	botonSIn3D.setVisible(false);
 
-	botonNOn3D = new JButton("No");
-	botonNOn3D.setBounds(125, 160, 90, 25);
-	add(botonNOn3D);
-  	botonNOn3D.setVisible(false);
+	botonSIn3D1 = new JButton("Si");
+	botonSIn3D1.setBounds(20, 160, 90, 25);
+	add(botonSIn3D1);
+	botonSIn3D1.setVisible(false);
 
-	botonSIn3I = new JButton("Si");
-	botonSIn3I.setBounds(20, 160, 90, 25);
-	add(botonSIn3I);
-	botonSIn3I.setVisible(false);
+	botonNOn3D1 = new JButton("No");
+	botonNOn3D1.setBounds(125, 160, 90, 25);
+	add(botonNOn3D1);
+  	botonNOn3D1.setVisible(false);
 
-	botonNOn3I = new JButton("No");
-	botonNOn3I.setBounds(125, 160, 90, 25);
-	add(botonNOn3I);
-  	botonNOn3I.setVisible(false);
+	botonSIn3I1 = new JButton("Si");
+	botonSIn3I1.setBounds(20, 160, 90, 25);
+	add(botonSIn3I1);
+	botonSIn3I1.setVisible(false);
+
+	botonNOn3I1 = new JButton("No");
+	botonNOn3I1.setBounds(125, 160, 90, 25);
+	add(botonNOn3I1);
+  	botonNOn3I1.setVisible(false);
+
+	botonSIn3D2 = new JButton("Si");
+	botonSIn3D2.setBounds(20, 160, 90, 25);
+	add(botonSIn3D2);
+	botonSIn3D2.setVisible(false);
+
+	botonNOn3D2 = new JButton("No");
+	botonNOn3D2.setBounds(125, 160, 90, 25);
+	add(botonNOn3D2);
+  	botonNOn3D2.setVisible(false);
+
+	botonSIn3I2 = new JButton("Si");
+	botonSIn3I2.setBounds(20, 160, 90, 25);
+	add(botonSIn3I2);
+	botonSIn3I2.setVisible(false);
+
+	botonNOn3I2 = new JButton("No");
+	botonNOn3I2.setBounds(125, 160, 90, 25);
+	add(botonNOn3I2);
+  	botonNOn3I2.setVisible(false);
 
 
 
-	botonSIn4I = new JButton("Si");
-	botonSIn4I.setBounds(20, 160, 90, 25);
-	add(botonSIn4I);
-	botonSIn4I.setVisible(false);
 
-	botonNOn4I = new JButton("No");
-	botonNOn4I.setBounds(125, 160, 90, 25);
-	add(botonNOn4I);
-  	botonNOn4I.setVisible(false);
+	botonSIn4D1 = new JButton("Si");
+	botonSIn4D1.setBounds(20, 160, 90, 25);
+	add(botonSIn4D1);
+	botonSIn4D1.setVisible(false);
+
+	botonNOn4D1 = new JButton("No");
+	botonNOn4D1.setBounds(125, 160, 90, 25);
+	add(botonNOn4D1);
+  	botonNOn4D1.setVisible(false);
+
+	botonSIn4I1 = new JButton("Si");
+	botonSIn4I1.setBounds(20, 160, 90, 25);
+	add(botonSIn4I1);
+	botonSIn4I1.setVisible(false);
+
+	botonNOn4I1 = new JButton("No");
+	botonNOn4I1.setBounds(125, 160, 90, 25);
+	add(botonNOn4I1);
+  	botonNOn4I1.setVisible(false);
+
+	botonSIn4D2 = new JButton("Si");
+	botonSIn4D2.setBounds(20, 160, 90, 25);
+	add(botonSIn4D2);
+	botonSIn4D2.setVisible(false);
+
+	botonNOn4D2 = new JButton("No");
+	botonNOn4D2.setBounds(125, 160, 90, 25);
+	add(botonNOn4D2);
+  	botonNOn4D2.setVisible(false);
+
+	botonSIn4I2 = new JButton("Si");
+	botonSIn4I2.setBounds(20, 160, 90, 25);
+	add(botonSIn4I2);
+	botonSIn4I2.setVisible(false);
+
+	botonNOn4I2 = new JButton("No");
+	botonNOn4I2.setBounds(125, 160, 90, 25);
+	add(botonNOn4I2);
+  	botonNOn4I2.setVisible(false);
+
 
 
 	boton.addActionListener(this);
+	botonJDN.addActionListener(this);
 	botonSIn1.addActionListener(this);
 	botonNOn1.addActionListener(this);
+
 	botonSIn2D.addActionListener(this);
 	botonNOn2D.addActionListener(this);
 	botonSIn2I.addActionListener(this);
 	botonNOn2I.addActionListener(this);
-	botonSIn3D.addActionListener(this);
-	botonNOn3D.addActionListener(this);
-	botonSIn3I.addActionListener(this);
-	botonNOn3I.addActionListener(this);
-	botonSIn4I.addActionListener(this);
-	botonNOn4I.addActionListener(this);
+
+	botonSIn3D1.addActionListener(this);
+	botonNOn3D1.addActionListener(this);
+	botonSIn3I1.addActionListener(this);
+	botonNOn3I1.addActionListener(this);
+	botonSIn3D2.addActionListener(this);
+	botonNOn3D2.addActionListener(this);
+	botonSIn3I2.addActionListener(this);
+	botonNOn3I2.addActionListener(this);
+
+	botonSIn4D1.addActionListener(this);
+	botonNOn4D1.addActionListener(this);
+	botonSIn4I1.addActionListener(this);
+	botonNOn4I1.addActionListener(this);
+	botonSIn4D2.addActionListener(this);
+	botonNOn4D2.addActionListener(this);
+	botonSIn4I2.addActionListener(this);
+	botonNOn4I2.addActionListener(this);
+
 	botonSalir.addActionListener(this);
 
   }//Fin del constructor 
@@ -168,6 +244,21 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	  	etiqueta3.setText("Tu personaje promueve no juntarse con la chusma ? ");
 		}
 
+			if(accion.getSource() == botonNOn3I){
+		  	  botonSIn3I.setVisible(false);
+	  		  botonNOn3I.setVisible(false);
+	  		  botonJDN.setVisible(true);	
+			  etiqueta3.setText("Tu personaje es: LA BRIJA DEL 701 !!");
+			}
+
+			if(accion.getSource() == botonSIn3I){
+		  	  botonSIn3I.setVisible(false);
+	  		  botonNOn3I.setVisible(false);		
+	  		  botonJDN.setVisible(true);	  
+			  etiqueta3.setText("Tu personaje es: DONA FLORINDA !!");
+			}
+
+
 		if(accion.getSource() == botonNOn2D){
 	  	botonSIn2D.setVisible(false);
 	  	botonNOn2D.setVisible(false);
@@ -176,7 +267,19 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	  	etiqueta3.setText("Tu personaje usa lentes ? ");
 		}
 
+			if(accion.getSource() == botonNOn3D){
+		  	  botonSIn3D.setVisible(false);
+	  		  botonNOn3D.setVisible(false);
+	  		  botonJDN.setVisible(true);	
+			  etiqueta3.setText("Tu personaje es: LA POPIS !!");
+			}
 
+			if(accion.getSource() == botonSIn3D){
+		  	  botonSIn3D.setVisible(false);
+	  		  botonNOn3D.setVisible(false);		
+	  		  botonJDN.setVisible(true);	  
+			  etiqueta3.setText("Tu personaje es: LA CHILINDRINA !!");
+			}
 
 
 
@@ -187,6 +290,53 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	  botonNOn2I.setVisible(true);
 	  etiqueta3.setText("Tu personaje es adulto ? ");
 	}
+
+		if(accion.getSource() == botonSIn2I){
+	  	botonSIn2I.setVisible(false);
+	  	botonNOn2I.setVisible(false);
+	  	botonSIn3I.setVisible(true);
+	  	botonNOn3I.setVisible(true);
+	  	etiqueta3.setText("Tu personaje tiene problemas de sobrepeso ? ");
+		}
+
+			if(accion.getSource() == botonNOn3I){
+		  	  botonSIn3I.setVisible(false);
+	  		  botonNOn3I.setVisible(false);
+	  		  botonSIn4D.setVisible(true);
+	  		  botonNOn4D.setVisible(true);	
+			  etiqueta3.setText("Tu personaje es invitado a paar por una tasa de cafe? ");
+			}
+
+			if(accion.getSource() == botonSIn3I){
+		  	  botonSIn3I.setVisible(false);
+	  		  botonNOn3I.setVisible(false);
+	  		  botonSIn4I.setVisible(true);
+	  		  botonNOn4I.setVisible(true);	
+			  etiqueta3.setText("Tu personaje insiste en cobrar el dinero de la renta ? ");
+			}
+
+
+		if(accion.getSource() == botonNOn2D){
+	  	botonSIn2D.setVisible(false);
+	  	botonNOn2D.setVisible(false);
+	  	botonSIn3D.setVisible(true);
+	  	botonNOn3D.setVisible(true);
+	  	etiqueta3.setText("Tu personaje usa lentes ? ");
+		}
+
+			if(accion.getSource() == botonNOn3D){
+		  	  botonSIn3D.setVisible(false);
+	  		  botonNOn3D.setVisible(false);
+	  		  botonJDN.setVisible(true);	
+			  etiqueta3.setText("Tu personaje es: LA POPIS !!");
+			}
+
+			if(accion.getSource() == botonSIn3D){
+		  	  botonSIn3D.setVisible(false);
+	  		  botonNOn3D.setVisible(false);		
+	  		  botonJDN.setVisible(true);	  
+			  etiqueta3.setText("Tu personaje es: LA CHILINDRINA !!");
+			}
 
 
 
