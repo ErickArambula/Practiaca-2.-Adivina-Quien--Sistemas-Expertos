@@ -12,9 +12,14 @@ public class AdivinaQuien extends JFrame{
 	setLayout(null);
 	setTitle("Adivina Quien del CHAVO");
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
+	getContentPane().setBackground(Color.BLACK);
+	
 
+	Font fuente = new Font("Broadway", Font.PLAIN, 18);
 	etiqueta1 = new JLabel("Erick Arambula");
-	etiqueta1.setBounds(100, 100, 100, 15); // x, y, ancho, alto
+	etiqueta1.setBounds(100, 100, 500, 15); // x, y, ancho, alto
+	etiqueta1.setFont(fuente);
+	etiqueta1.setForeground(Color.WHITE);
 	add(etiqueta1);
 
 	boton = new JButton("Boton");
