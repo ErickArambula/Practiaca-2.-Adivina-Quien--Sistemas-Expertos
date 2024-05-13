@@ -220,6 +220,10 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	if(accion.getSource() == botonSalir){
 	  System.exit(0);
 	}
+
+	if(accion.getSource() == botonJDN){
+	  boton.setVisible(true);
+	  botonJDN.setVisible(false);
 	
 	if(accion.getSource() == boton){
 	  boton.setVisible(false);
@@ -239,21 +243,21 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 		if(accion.getSource() == botonSIn2D){
 	  	botonSIn2D.setVisible(false);
 	  	botonNOn2D.setVisible(false);
-	  	botonSIn3I.setVisible(true);
-	  	botonNOn3I.setVisible(true);
+	  	botonSIn3I2.setVisible(true);
+	  	botonNOn3I2.setVisible(true);
 	  	etiqueta3.setText("Tu personaje promueve no juntarse con la chusma ? ");
 		}
 
-			if(accion.getSource() == botonNOn3I){
-		  	  botonSIn3I.setVisible(false);
-	  		  botonNOn3I.setVisible(false);
+			if(accion.getSource() == botonNOn3I2){
+		  	  botonSIn3I2.setVisible(false);
+	  		  botonNOn3I2.setVisible(false);
 	  		  botonJDN.setVisible(true);	
 			  etiqueta3.setText("Tu personaje es: LA BRIJA DEL 701 !!");
 			}
 
-			if(accion.getSource() == botonSIn3I){
-		  	  botonSIn3I.setVisible(false);
-	  		  botonNOn3I.setVisible(false);		
+			if(accion.getSource() == botonSIn3I2){
+		  	  botonSIn3I2.setVisible(false);
+	  		  botonNOn3I2.setVisible(false);		
 	  		  botonJDN.setVisible(true);	  
 			  etiqueta3.setText("Tu personaje es: DONA FLORINDA !!");
 			}
@@ -262,25 +266,25 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 		if(accion.getSource() == botonNOn2D){
 	  	botonSIn2D.setVisible(false);
 	  	botonNOn2D.setVisible(false);
-	  	botonSIn3D.setVisible(true);
-	  	botonNOn3D.setVisible(true);
+	  	botonSIn3D2.setVisible(true);
+	  	botonNOn3D2.setVisible(true);
 	  	etiqueta3.setText("Tu personaje usa lentes ? ");
 		}
 
-			if(accion.getSource() == botonNOn3D){
-		  	  botonSIn3D.setVisible(false);
-	  		  botonNOn3D.setVisible(false);
+			if(accion.getSource() == botonNOn3D2){
+		  	  botonSIn3D2.setVisible(false);
+	  		  botonNOn3D2.setVisible(false);
 	  		  botonJDN.setVisible(true);	
 			  etiqueta3.setText("Tu personaje es: LA POPIS !!");
 			}
 
-			if(accion.getSource() == botonSIn3D){
-		  	  botonSIn3D.setVisible(false);
-	  		  botonNOn3D.setVisible(false);		
+			if(accion.getSource() == botonSIn3D2){
+		  	  botonSIn3D2.setVisible(false);
+	  		  botonNOn3D2.setVisible(false);		
 	  		  botonJDN.setVisible(true);	  
 			  etiqueta3.setText("Tu personaje es: LA CHILINDRINA !!");
 			}
-
+//--------------------------------------------------------------------------------------------------------------
 
 
 	if(accion.getSource() == botonNOn1){
@@ -294,50 +298,106 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 		if(accion.getSource() == botonSIn2I){
 	  	botonSIn2I.setVisible(false);
 	  	botonNOn2I.setVisible(false);
-	  	botonSIn3I.setVisible(true);
-	  	botonNOn3I.setVisible(true);
+	  	botonSIn3I1.setVisible(true);
+	  	botonNOn3I1.setVisible(true);
 	  	etiqueta3.setText("Tu personaje tiene problemas de sobrepeso ? ");
 		}
 
-			if(accion.getSource() == botonNOn3I){
-		  	  botonSIn3I.setVisible(false);
-	  		  botonNOn3I.setVisible(false);
-	  		  botonSIn4D.setVisible(true);
-	  		  botonNOn4D.setVisible(true);	
+			if(accion.getSource() == botonNOn3I1){
+		  	  botonSIn3I1.setVisible(false);
+	  		  botonNOn3I1.setVisible(false);
+	  		  botonSIn4D1.setVisible(true);
+	  		  botonNOn4D1.setVisible(true);	
 			  etiqueta3.setText("Tu personaje es invitado a paar por una tasa de cafe? ");
 			}
 
-			if(accion.getSource() == botonSIn3I){
-		  	  botonSIn3I.setVisible(false);
-	  		  botonNOn3I.setVisible(false);
-	  		  botonSIn4I.setVisible(true);
-	  		  botonNOn4I.setVisible(true);	
+				if(accion.getSource() == botonSIn4D1){
+				  botonSIn4D1.setVisible(false);
+	  		  	  botonNOn4D1.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: EL SENOR JIRAFAILS !!"); 
+				}
+
+				if(accion.getSource() == botonNOn4D1){
+				  botonSIn4D1.setVisible(false);
+	  		  	  botonNOn4D1.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: RON DAMON !!"); 
+				}
+
+			if(accion.getSource() == botonSIn3I1){
+		  	  botonSIn3I1.setVisible(false);
+	  		  botonNOn3I1.setVisible(false);
+	  		  botonSIn4I1.setVisible(true);
+	  		  botonNOn4I1.setVisible(true);	
 			  etiqueta3.setText("Tu personaje insiste en cobrar el dinero de la renta ? ");
 			}
+	
+				if(accion.getSource() == botonSIn4I1){
+				  botonSIn4I1.setVisible(false);
+	  		  	  botonNOn4I1.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: EL SENOR BARRIGA !!"); 
+				}
 
+				if(accion.getSource() == botonNOn4I1){
+				  botonSIn4I1.setVisible(false);
+	  		  	  botonNOn4I1.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: JAIMITO EL CARTER !!"); 
+				}
 
-		if(accion.getSource() == botonNOn2D){
-	  	botonSIn2D.setVisible(false);
-	  	botonNOn2D.setVisible(false);
-	  	botonSIn3D.setVisible(true);
-	  	botonNOn3D.setVisible(true);
-	  	etiqueta3.setText("Tu personaje usa lentes ? ");
+		if(accion.getSource() == botonNOn2I){
+	  	botonSIn2I.setVisible(false);
+	  	botonNOn2I.setVisible(false);
+	  	botonSIn3D1.setVisible(true);
+	  	botonNOn3D1.setVisible(true);
+	  	etiqueta3.setText("Tu personaje tiene pelo negro ? ");
 		}
 
-			if(accion.getSource() == botonNOn3D){
-		  	  botonSIn3D.setVisible(false);
-	  		  botonNOn3D.setVisible(false);
-	  		  botonJDN.setVisible(true);	
-			  etiqueta3.setText("Tu personaje es: LA POPIS !!");
+			if(accion.getSource() == botonNOn3D1){
+		  	  botonSIn3D1.setVisible(false);
+	  		  botonNOn3D1.setVisible(false);
+	  		  botonSIn4D2.setVisible(true);
+	  		  botonNOn4D2.setVisible(true);	
+			  etiqueta3.setText("Tu personaje goza de dormir en un barril ? ");
 			}
 
-			if(accion.getSource() == botonSIn3D){
-		  	  botonSIn3D.setVisible(false);
-	  		  botonNOn3D.setVisible(false);		
-	  		  botonJDN.setVisible(true);	  
-			  etiqueta3.setText("Tu personaje es: LA CHILINDRINA !!");
-			}
+				if(accion.getSource() == botonSIn4D2){
+				  botonSIn4D2.setVisible(false);
+	  		  	  botonNOn4D2.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: EL CHAVO DEL 8 !!!!!"); 
+				}
 
+				if(accion.getSource() == botonNOn4D2){
+				  botonSIn4D2.setVisible(false);
+	  		  	  botonNOn4D2.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: EL CARNALITO QUE NI TU TE SABES SU NOMBRE !!"); 
+				}
+
+			if(accion.getSource() == botonSIn3D1){
+		  	  botonSIn3D1.setVisible(false);
+	  		  botonNOn3D1.setVisible(false);
+	  		  botonSIn4I2.setVisible(true);
+	  		  botonNOn4I2.setVisible(true);	
+			  etiqueta3.setText("Tu personaje podria facilmente ser usado como balon ? ");
+			}
+	
+				if(accion.getSource() == botonSIn4I2){
+				  botonSIn4I2.setVisible(false);
+	  		  	  botonNOn4I2.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: NONO !!"); 
+				}
+
+				if(accion.getSource() == botonNOn4I2){
+				  botonSIn4I2.setVisible(false);
+	  		  	  botonNOn4I2.setVisible(false);		
+	  		  	  botonJDN.setVisible(true);	  
+			  	  etiqueta3.setText("Tu personaje es: EL CACHETES DE MARRANA FLACA !!"); 
+				}
 
 
 
