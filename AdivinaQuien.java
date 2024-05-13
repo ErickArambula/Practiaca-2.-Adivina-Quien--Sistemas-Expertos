@@ -331,7 +331,7 @@ public class AdivinaQuien extends JFrame implements ActionListener{
 	  		  botonSIn4I1.setVisible(true);
 	  		  botonNOn4I1.setVisible(true);	
 			  etiqueta3.setText("Tu personaje insiste en cobrar el dinero de la renta ? ");
-			}
+			} 
 	
 				if(accion.getSource() == botonSIn4I1){
 				  botonSIn4I1.setVisible(false);
